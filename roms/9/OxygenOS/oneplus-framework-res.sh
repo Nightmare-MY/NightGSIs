@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCALDIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 apppath=$1
 
 find $apppath/res/ -type f -exec sed -i 's/@android/@*android/g' {} +

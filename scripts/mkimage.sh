@@ -23,7 +23,7 @@ outputtype=$2
 syssize=$3
 output=$4
 
-LOCALDIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 tempdir="$LOCALDIR/../tmp"
 toolsdir="$LOCALDIR/../tools"
 HOST="$(uname)"

@@ -2,7 +2,7 @@
 
 # usage: apkedit.sh app.apk patch.sh platform
 
-LOCALDIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 apppath=$1
 patch=$2
 sign=$3

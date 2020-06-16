@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCALDIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 EXT4EXTRACT=$LOCALDIR/../tools/ext4extract/ext4extract.py
 
 TMPDIR=$LOCALDIR/../tmp/apex_ext
