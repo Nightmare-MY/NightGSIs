@@ -34,10 +34,10 @@ p="/plat_file_contexts"
 n="/nonplat_file_contexts"
 for f in "$systemdir/system/etc/selinux" "$systemdir/system/vendor/etc/selinux"; do
     if [[ -f "$f$p" ]]; then
-        sudo cat "$f$p" >> "$tempdir/file_contexts"
+         cat "$f$p" >> "$tempdir/file_contexts"
     fi
     if [[ -f "$f$n" ]]; then
-        sudo cat "$f$n" >> "$tempdir/file_contexts"
+         cat "$f$n" >> "$tempdir/file_contexts"
     fi
 done
 
@@ -80,27 +80,29 @@ if [[ -f "$tempdir/file_contexts" ]]; then
     echo "/avb                    u:object_r:rootfs:s0" >> "$tempdir/file_contexts"
     fcontexts="$tempdir/file_contexts"
 fi
-sudo rm -rf "$systemdir/persist"
-sudo rm -rf "$systemdir/bt_firmware"
-sudo rm -rf "$systemdir/firmware"
-sudo rm -rf "$systemdir/dsp"
-sudo rm -rf "$systemdir/cache"
-sudo mkdir -p "$systemdir/bt_firmware"
-sudo mkdir -p "$systemdir/persist"
-sudo mkdir -p "$systemdir/firmware"
-sudo mkdir -p "$systemdir/dsp"
-sudo mkdir -p "$systemdir/cache"
-
+ rm -rf "$systemdir/persist"
+ rm -rf "$systemdir/bt_firmware"
+ rm -rf "$systemdir/firmware"
+ rm -rf "$systemdir/dsp"
+ rm -rf "$systemdir/cache"
+ mkdir -p "$systemdir/bt_firmware"
+ mkdir -p "$systemdir/persist"
+ mkdir -p "$systemdir/firmware"
+ mkdir -p "$systemdir/dsp"
+ mkdir -p "$systemdir/cache"
+cp -rf $CURPRO/Config/system_fs_config ./tmp/fs_config
+echo "\\033[1;34m生成新的fs_config中...\\033[0m"
+/data/data/com.nightmare/files/home/NightGSIs/add.sh
 if [ "$5" == "--old" ]; then
     if [ "$outputtype" == "Aonly" ]; then
-        sudo $make_ext4fs -T 0 -S $fcontexts -l $syssize -L system -a system -s "$output" "$systemdir/system"
+         $make_ext4fs -T 0 -S $fcontexts -l $syssize -L system -a system -s "$output" "$systemdir/system"
     else
-        sudo $make_ext4fs -T 0 -S $fcontexts -l $syssize -L / -a / -s "$output" "$systemdir/"
+         $make_ext4fs -T 0 -S $fcontexts -l $syssize -L / -a / -s "$output" "$systemdir/"
     fi
 else
     if [ "$outputtype" == "Aonly" ]; then
-        sudo $toolsdir/mkuserimg_mke2fs.sh -s "$systemdir/system" "$output" ext4 system $syssize -T 0 -L system $fcontexts
+         $toolsdir/mkuserimg_mke2fs.sh  "$systemdir/system" "$output" ext4 system $syssize -T 0 -C /tmp/fs_config -L system /tmp/file_contexts
     else
-        sudo $toolsdir/mkuserimg_mke2fs.sh -s "$systemdir/" "$output" ext4 / $syssize -T 0 -L / $fcontexts
+         $toolsdir/mkuserimg_mke2fs.sh  "$systemdir/" "$output" ext4 / $syssize -T 0 -C /tmp/fs_config -L / /tmp/file_contexts
     fi
 fi
