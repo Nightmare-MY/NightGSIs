@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 declare -a partitions=(
 boot-framework-oahl-backward-compatibility.vdex

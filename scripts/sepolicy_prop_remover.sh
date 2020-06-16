@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 FILE="$1"
 PART="$2"

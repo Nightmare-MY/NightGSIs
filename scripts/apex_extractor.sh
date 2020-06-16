@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 LOCALDIR=`cd "$(dirname $0)" && pwd`
 EXT4EXTRACT=$LOCALDIR/../tools/ext4extract/ext4extract.py

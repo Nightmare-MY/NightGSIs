@@ -1,4 +1,4 @@
-#!/bin/bash
+
 SYSTEMDIR="$1"
 
 flavor=$(grep -oP "(?<=^ro.build.flavor=).*" -hs "$SYSTEMDIR"/build*.prop)

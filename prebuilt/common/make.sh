@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 systempath=$1
 romdir=$2

@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     distro=$(awk -F= '$1 == "ID" {print $2}' /etc/os-release)

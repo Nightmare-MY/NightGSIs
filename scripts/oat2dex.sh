@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 #
 # oat2dex:
