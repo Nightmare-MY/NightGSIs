@@ -1,4 +1,4 @@
-#!/bin/bash
+
 #
 # To call this script, make sure mke2fs is somewhere in PATH
 
@@ -20,7 +20,7 @@ MKE2FS_EXTENDED_OPTS=""
 E2FSDROID_OPTS=""
 E2FSPROGS_FAKE_TIME=""
 
-LOCALDIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 
 if [ "$1" = "-s" ]; then
   MKE2FS_EXTENDED_OPTS+="android_sparse"
@@ -165,7 +165,7 @@ if [ -z $SIZE ]; then
 fi
 
 # Round down the filesystem length to be a multiple of the block size
-SIZE=$((SIZE / BLOCKSIZE))
+SIZE=`echo "scale=0; $SIZE/$BLOCKSIZE" | bc`
 
 # truncate output file since mke2fs will keep verity section in existing file
 cat /dev/null >$OUTPUT_FILE
@@ -175,8 +175,8 @@ if [[ $E2FSPROGS_FAKE_TIME ]]; then
   MAKE_EXT4FS_ENV+=" E2FSPROGS_FAKE_TIME=$E2FSPROGS_FAKE_TIME"
 fi
 HOST="$(uname)"
-mke2fs="$LOCALDIR/$HOST/bin/mke2fs"
-e2fsdroid="$LOCALDIR/$HOST/bin/e2fsdroid"
+mke2fs="/system/bin/mke2fs"
+e2fsdroid="chroot /data/data/com.nightmare/files/home/NightGSIs/ /e2fsdroid"
 
 MAKE_EXT4FS_CMD="$mke2fs $MKE2FS_OPTS -t $EXT_VARIANT -b $BLOCKSIZE $OUTPUT_FILE $SIZE"
 echo $MAKE_EXT4FS_ENV $MAKE_EXT4FS_CMD
@@ -193,6 +193,6 @@ E2FSDROID_CMD="$e2fsdroid $E2FSDROID_OPTS -f $SRC_DIR -a $MOUNT_POINT $OUTPUT_FI
 echo $E2FSDROID_ENV $E2FSDROID_CMD
 env $E2FSDROID_ENV $E2FSDROID_CMD
 if [ $? -ne 0 ]; then
-  rm -f $OUTPUT_FILE
+ # rm -f $OUTPUT_FILE
   exit 4
 fi
