@@ -25,7 +25,7 @@ if [ "$1" == "" ]; then
     exit 1
 fi
 
-LOCALDIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 HOST="$(uname)"
 toolsdir="$LOCALDIR/tools"
 simg2img="$toolsdir/$HOST/bin/simg2img"

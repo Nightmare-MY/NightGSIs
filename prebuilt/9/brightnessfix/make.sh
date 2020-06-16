@@ -1,7 +1,7 @@
 
 
 systempath=$1
-LOCALDIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 scriptsdir=$LOCALDIR/../../../scripts
 toolsdir=$LOCALDIR/../../../tools
 TMPDIR=$LOCALDIR/../../../tmp/brightnessfix
