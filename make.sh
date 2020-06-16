@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 # Project OEM-GSI Porter by Erfan Abdi <erfangplus@gmail.com>
 
@@ -17,7 +17,7 @@ if [ "$3" == "" ]; then
     exit 1
 fi
 
-LOCALDIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+LOCALDIR=`cd "$(dirname $0)" && pwd`
 sourcepath=$1
 romtype=$2
 outputtype=$3
@@ -84,14 +84,14 @@ if [ "$sourcetype" == "Aonly" ]; then
     tar xf "$prebuiltdir/ABrootDir.tar"
     cd "$LOCALDIR"
     echo "Making copy of source rom to temp"
-    ( cd "$sourcepath" ; sudo tar cf - . ) | ( cd "$systemdir/system" ; sudo tar xf - )
+    ( cd "$sourcepath" ; tar cf - . ) | ( cd "$systemdir/system" ; tar xf - )
     cd "$LOCALDIR"
     sed -i "/ro.build.system_root_image/d" "$systemdir/system/build.prop"
     sed -i "/ro.build.ab_update/d" "$systemdir/system/build.prop"
     echo "ro.build.system_root_image=false" >> "$systemdir/system/build.prop"
 else
     echo "Making copy of source rom to temp"
-    ( cd "$sourcepath" ; sudo tar cf - . ) | ( cd "$systemdir" ; sudo tar xf - )
+    ( cd "$sourcepath" ; tar cf - . ) | ( cd "$systemdir" ; tar xf - )
     cd "$LOCALDIR"
     sed -i "/ro.build.system_root_image/d" "$systemdir/system/build.prop"
     sed -i "/ro.build.ab_update/d" "$systemdir/system/build.prop"
@@ -238,4 +238,4 @@ fi
 $scriptsdir/mkimage.sh $systemdir $outputtype $systemsize $output $useold > $tempdir/mkimage.log
 
 echo "Remove Temp dir"
-rm -rf "$tempdir"
+#rm -rf "$tempdir"

@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # Project OEM-GSI Porter by Erfan Abdi <erfangplus@gmail.com>
 
@@ -102,7 +101,7 @@ LEAVE()
 }
 
 echo "Updating tools..."
-"$PROJECT_DIR"/update.sh
+#"$PROJECT_DIR"/update.sh
 
 # Create input & working directory if it does not exist
 mkdir -p "$PROJECT_DIR/input" "$PROJECT_DIR/working" "$PROJECT_DIR/output"
@@ -121,7 +120,7 @@ if [ $MOUNTED == false ]; then
         DOWNLOAD "$URL" "$ZIP_NAME"
         URL="$ZIP_NAME"
     fi
-    "$PROJECT_DIR"/zip2img.sh "$URL" "$PROJECT_DIR/working" || exit 1
+    bash "$PROJECT_DIR"/zip2img.sh "$URL" "$PROJECT_DIR/working" || exit 1
     if [ $CLEAN == true ]; then
         rm -rf "$ZIP_NAME"
     fi
