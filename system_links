@@ -1,0 +1,674 @@
+rm -rf ./system/bin
+ln -f -s /system/bin ./system/bin
+rm -rf ./system/bugreports
+ln -f -s /data/user_de/0/com.android.shell/files/bugreports ./system/bugreports
+rm -rf ./system/charger
+ln -f -s /system/bin/charger ./system/charger
+rm -rf ./system/d
+ln -f -s /sys/kernel/debug ./system/d
+rm -rf ./system/default.prop
+ln -f -s system/etc/prop.default ./system/default.prop
+rm -rf ./system/etc
+ln -f -s /system/etc ./system/etc
+rm -rf ./system/init
+ln -f -s /system/bin/init ./system/init
+rm -rf ./system/odm/app
+ln -f -s /vendor/odm/app ./system/odm/app
+rm -rf ./system/odm/bin
+ln -f -s /vendor/odm/bin ./system/odm/bin
+rm -rf ./system/odm/etc
+ln -f -s /vendor/odm/etc ./system/odm/etc
+rm -rf ./system/odm/firmware
+ln -f -s /vendor/odm/firmware ./system/odm/firmware
+rm -rf ./system/odm/framework
+ln -f -s /vendor/odm/framework ./system/odm/framework
+rm -rf ./system/odm/lib
+ln -f -s /vendor/odm/lib ./system/odm/lib
+rm -rf ./system/odm/lib64
+ln -f -s /vendor/odm/lib64 ./system/odm/lib64
+rm -rf ./system/odm/overlay
+ln -f -s /vendor/odm/overlay ./system/odm/overlay
+rm -rf ./system/odm/priv-app
+ln -f -s /vendor/odm/priv-app ./system/odm/priv-app
+rm -rf ./system/odm/usr
+ln -f -s /vendor/odm/usr ./system/odm/usr
+rm -rf ./system/product_services
+ln -f -s /system/product_services ./system/product_services
+rm -rf ./system/sdcard
+ln -f -s /storage/self/primary ./system/sdcard
+rm -rf ./system/system/app/Bluetooth/lib/arm64/libbluetooth_jni.so
+ln -f -s /system/lib64/libbluetooth_jni.so ./system/system/app/Bluetooth/lib/arm64/libbluetooth_jni.so
+rm -rf ./system/system/app/BuiltInPrintService/lib/arm64/libcups.so
+ln -f -s /system/lib64/libcups.so ./system/system/app/BuiltInPrintService/lib/arm64/libcups.so
+rm -rf ./system/system/app/BuiltInPrintService/lib/arm64/libwfds.so
+ln -f -s /system/lib64/libwfds.so ./system/system/app/BuiltInPrintService/lib/arm64/libwfds.so
+rm -rf ./system/system/app/Cit/lib/arm64/libdc_cal_jni.so
+ln -f -s /system/lib64/libdc_cal_jni.so ./system/system/app/Cit/lib/arm64/libdc_cal_jni.so
+rm -rf ./system/system/app/MiuiBiometric/lib/arm64/libjni_stfaceunlock_api.so
+ln -f -s /system/lib64/libjni_stfaceunlock_api.so ./system/system/app/MiuiBiometric/lib/arm64/libjni_stfaceunlock_api.so
+rm -rf ./system/system/app/MiuiBiometric/lib/arm64/libstfaceunlockocl.so
+ln -f -s /system/lib64/libstfaceunlockocl.so ./system/system/app/MiuiBiometric/lib/arm64/libstfaceunlockocl.so
+rm -rf ./system/system/app/MiuiDaemon/lib/arm64/libmisys_jni.so
+ln -f -s /system/lib64/libmisys_jni.so ./system/system/app/MiuiDaemon/lib/arm64/libmisys_jni.so
+rm -rf ./system/system/app/NQNfcNci/lib/arm64/libsn100nfc_nci_jni.so
+ln -f -s /system/lib64/libsn100nfc_nci_jni.so ./system/system/app/NQNfcNci/lib/arm64/libsn100nfc_nci_jni.so
+rm -rf ./system/system/app/NextPay/lib/arm64/libentryexpro.so
+ln -f -s /system/lib64/libentryexpro.so ./system/system/app/NextPay/lib/arm64/libentryexpro.so
+rm -rf ./system/system/app/NextPay/lib/arm64/libuptsmaddonmi.so
+ln -f -s /system/lib64/libuptsmaddonmi.so ./system/system/app/NextPay/lib/arm64/libuptsmaddonmi.so
+rm -rf ./system/system/app/PacProcessor/lib/arm64/libjni_pacprocessor.so
+ln -f -s /system/lib64/libjni_pacprocessor.so ./system/system/app/PacProcessor/lib/arm64/libjni_pacprocessor.so
+rm -rf ./system/system/app/PowerKeeper/lib/arm64/libpowerkeeper_jni.so
+ln -f -s /system/lib64/libpowerkeeper_jni.so ./system/system/app/PowerKeeper/lib/arm64/libpowerkeeper_jni.so
+rm -rf ./system/system/app/PrintSpooler/lib/arm64/libprintspooler_jni.so
+ln -f -s /system/lib64/libprintspooler_jni.so ./system/system/app/PrintSpooler/lib/arm64/libprintspooler_jni.so
+rm -rf ./system/system/app/Qmmi/lib/arm64/libmmi_jni.so
+ln -f -s /system/lib64/libmmi_jni.so ./system/system/app/Qmmi/lib/arm64/libmmi_jni.so
+rm -rf ./system/system/app/TSMClient/lib/arm64/libentryexpro.so
+ln -f -s /system/lib64/libentryexpro.so ./system/system/app/TSMClient/lib/arm64/libentryexpro.so
+rm -rf ./system/system/app/TSMClient/lib/arm64/libuptsmaddonmi.so
+ln -f -s /system/lib64/libuptsmaddonmi.so ./system/system/app/TSMClient/lib/arm64/libuptsmaddonmi.so
+rm -rf ./system/system/app/VoiceTrigger/lib/arm/libmisys_jni.so
+ln -f -s /system/lib/libmisys_jni.so ./system/system/app/VoiceTrigger/lib/arm/libmisys_jni.so
+rm -rf ./system/system/app/XiaomiModemDebugService/lib/arm64/libxiaomimodemdump_jni.so
+ln -f -s /system/lib64/libxiaomimodemdump_jni.so ./system/system/app/XiaomiModemDebugService/lib/arm64/libxiaomimodemdump_jni.so
+rm -rf ./system/system/app/XiaomiSimActivateService/lib/arm64/libsim-activate-root-checker.so
+ln -f -s /system/lib64/libsim-activate-root-checker.so ./system/system/app/XiaomiSimActivateService/lib/arm64/libsim-activate-root-checker.so
+rm -rf ./system/system/app/YouDaoEngine/lib/arm64/libdict-parser.so
+ln -f -s /system/lib64/libdict-parser.so ./system/system/app/YouDaoEngine/lib/arm64/libdict-parser.so
+rm -rf ./system/system/app/miui/lib/arm64/libmiuidiffpatcher.so
+ln -f -s /system/lib64/libmiuidiffpatcher.so ./system/system/app/miui/lib/arm64/libmiuidiffpatcher.so
+rm -rf ./system/system/app/miui/lib/arm64/libmiuinative.so
+ln -f -s /system/lib64/libmiuinative.so ./system/system/app/miui/lib/arm64/libmiuinative.so
+rm -rf ./system/system/bin/acpi
+ln -f -s toybox ./system/system/bin/acpi
+rm -rf ./system/system/bin/app_process
+ln -f -s app_process64 ./system/system/bin/app_process
+rm -rf ./system/system/bin/base64
+ln -f -s toybox ./system/system/bin/base64
+rm -rf ./system/system/bin/basename
+ln -f -s toybox ./system/system/bin/basename
+rm -rf ./system/system/bin/bc
+ln -f -s toybox ./system/system/bin/bc
+rm -rf ./system/system/bin/blockdev
+ln -f -s toybox ./system/system/bin/blockdev
+rm -rf ./system/system/bin/bootstrap/linker_asan
+ln -f -s linker ./system/system/bin/bootstrap/linker_asan
+rm -rf ./system/system/bin/bootstrap/linker_asan64
+ln -f -s linker64 ./system/system/bin/bootstrap/linker_asan64
+rm -rf ./system/system/bin/bunzip2
+ln -f -s bzip2 ./system/system/bin/bunzip2
+rm -rf ./system/system/bin/bzcat
+ln -f -s bzip2 ./system/system/bin/bzcat
+rm -rf ./system/system/bin/cal
+ln -f -s toybox ./system/system/bin/cal
+rm -rf ./system/system/bin/cat
+ln -f -s toybox ./system/system/bin/cat
+rm -rf ./system/system/bin/chcon
+ln -f -s toybox ./system/system/bin/chcon
+rm -rf ./system/system/bin/chgrp
+ln -f -s toybox ./system/system/bin/chgrp
+rm -rf ./system/system/bin/chmod
+ln -f -s toybox ./system/system/bin/chmod
+rm -rf ./system/system/bin/chown
+ln -f -s toybox ./system/system/bin/chown
+rm -rf ./system/system/bin/chroot
+ln -f -s toybox ./system/system/bin/chroot
+rm -rf ./system/system/bin/chrt
+ln -f -s toybox ./system/system/bin/chrt
+rm -rf ./system/system/bin/cksum
+ln -f -s toybox ./system/system/bin/cksum
+rm -rf ./system/system/bin/clear
+ln -f -s toybox ./system/system/bin/clear
+rm -rf ./system/system/bin/cmp
+ln -f -s toybox ./system/system/bin/cmp
+rm -rf ./system/system/bin/comm
+ln -f -s toybox ./system/system/bin/comm
+rm -rf ./system/system/bin/cp
+ln -f -s toybox ./system/system/bin/cp
+rm -rf ./system/system/bin/cpio
+ln -f -s toybox ./system/system/bin/cpio
+rm -rf ./system/system/bin/cut
+ln -f -s toybox ./system/system/bin/cut
+rm -rf ./system/system/bin/dalvikvm
+ln -f -s /apex/com.android.runtime/bin/dalvikvm ./system/system/bin/dalvikvm
+rm -rf ./system/system/bin/dalvikvm32
+ln -f -s /apex/com.android.runtime/bin/dalvikvm32 ./system/system/bin/dalvikvm32
+rm -rf ./system/system/bin/dalvikvm64
+ln -f -s /apex/com.android.runtime/bin/dalvikvm64 ./system/system/bin/dalvikvm64
+rm -rf ./system/system/bin/date
+ln -f -s toybox ./system/system/bin/date
+rm -rf ./system/system/bin/dd
+ln -f -s toybox ./system/system/bin/dd
+rm -rf ./system/system/bin/defrag.f2fs
+ln -f -s fsck.f2fs ./system/system/bin/defrag.f2fs
+rm -rf ./system/system/bin/devmem
+ln -f -s toybox ./system/system/bin/devmem
+rm -rf ./system/system/bin/dex2oat
+ln -f -s /apex/com.android.runtime/bin/dex2oat ./system/system/bin/dex2oat
+rm -rf ./system/system/bin/dexdiag
+ln -f -s /apex/com.android.runtime/bin/dexdiag ./system/system/bin/dexdiag
+rm -rf ./system/system/bin/dexdump
+ln -f -s /apex/com.android.runtime/bin/dexdump ./system/system/bin/dexdump
+rm -rf ./system/system/bin/dexlist
+ln -f -s /apex/com.android.runtime/bin/dexlist ./system/system/bin/dexlist
+rm -rf ./system/system/bin/dexoptanalyzer
+ln -f -s /apex/com.android.runtime/bin/dexoptanalyzer ./system/system/bin/dexoptanalyzer
+rm -rf ./system/system/bin/df
+ln -f -s toybox ./system/system/bin/df
+rm -rf ./system/system/bin/diff
+ln -f -s toybox ./system/system/bin/diff
+rm -rf ./system/system/bin/dirname
+ln -f -s toybox ./system/system/bin/dirname
+rm -rf ./system/system/bin/dmesg
+ln -f -s toybox ./system/system/bin/dmesg
+rm -rf ./system/system/bin/dos2unix
+ln -f -s toybox ./system/system/bin/dos2unix
+rm -rf ./system/system/bin/du
+ln -f -s toybox ./system/system/bin/du
+rm -rf ./system/system/bin/echo
+ln -f -s toybox ./system/system/bin/echo
+rm -rf ./system/system/bin/egrep
+ln -f -s grep ./system/system/bin/egrep
+rm -rf ./system/system/bin/env
+ln -f -s toybox ./system/system/bin/env
+rm -rf ./system/system/bin/expand
+ln -f -s toybox ./system/system/bin/expand
+rm -rf ./system/system/bin/expr
+ln -f -s toybox ./system/system/bin/expr
+rm -rf ./system/system/bin/fallocate
+ln -f -s toybox ./system/system/bin/fallocate
+rm -rf ./system/system/bin/false
+ln -f -s toybox ./system/system/bin/false
+rm -rf ./system/system/bin/fgrep
+ln -f -s grep ./system/system/bin/fgrep
+rm -rf ./system/system/bin/file
+ln -f -s toybox ./system/system/bin/file
+rm -rf ./system/system/bin/find
+ln -f -s toybox ./system/system/bin/find
+rm -rf ./system/system/bin/flock
+ln -f -s toybox ./system/system/bin/flock
+rm -rf ./system/system/bin/fmt
+ln -f -s toybox ./system/system/bin/fmt
+rm -rf ./system/system/bin/free
+ln -f -s toybox ./system/system/bin/free
+rm -rf ./system/system/bin/fsync
+ln -f -s toybox ./system/system/bin/fsync
+rm -rf ./system/system/bin/getconf
+ln -f -s toybox ./system/system/bin/getconf
+rm -rf ./system/system/bin/getenforce
+ln -f -s toybox ./system/system/bin/getenforce
+rm -rf ./system/system/bin/getevent
+ln -f -s toolbox ./system/system/bin/getevent
+rm -rf ./system/system/bin/getprop
+ln -f -s toolbox ./system/system/bin/getprop
+rm -rf ./system/system/bin/groups
+ln -f -s toybox ./system/system/bin/groups
+rm -rf ./system/system/bin/gunzip
+ln -f -s toybox ./system/system/bin/gunzip
+rm -rf ./system/system/bin/gzip
+ln -f -s toybox ./system/system/bin/gzip
+rm -rf ./system/system/bin/head
+ln -f -s toybox ./system/system/bin/head
+rm -rf ./system/system/bin/hostname
+ln -f -s toybox ./system/system/bin/hostname
+rm -rf ./system/system/bin/hwclock
+ln -f -s toybox ./system/system/bin/hwclock
+rm -rf ./system/system/bin/i2cdetect
+ln -f -s toybox ./system/system/bin/i2cdetect
+rm -rf ./system/system/bin/i2cdump
+ln -f -s toybox ./system/system/bin/i2cdump
+rm -rf ./system/system/bin/i2cget
+ln -f -s toybox ./system/system/bin/i2cget
+rm -rf ./system/system/bin/i2cset
+ln -f -s toybox ./system/system/bin/i2cset
+rm -rf ./system/system/bin/iconv
+ln -f -s toybox ./system/system/bin/iconv
+rm -rf ./system/system/bin/id
+ln -f -s toybox ./system/system/bin/id
+rm -rf ./system/system/bin/ifconfig
+ln -f -s toybox ./system/system/bin/ifconfig
+rm -rf ./system/system/bin/inotifyd
+ln -f -s toybox ./system/system/bin/inotifyd
+rm -rf ./system/system/bin/insmod
+ln -f -s toybox ./system/system/bin/insmod
+rm -rf ./system/system/bin/install
+ln -f -s toybox ./system/system/bin/install
+rm -rf ./system/system/bin/ionice
+ln -f -s toybox ./system/system/bin/ionice
+rm -rf ./system/system/bin/iorenice
+ln -f -s toybox ./system/system/bin/iorenice
+rm -rf ./system/system/bin/ip-wrapper-1.0
+ln -f -s netutils-wrapper-1.0 ./system/system/bin/ip-wrapper-1.0
+rm -rf ./system/system/bin/ip6tables-restore
+ln -f -s ip6tables ./system/system/bin/ip6tables-restore
+rm -rf ./system/system/bin/ip6tables-save
+ln -f -s ip6tables ./system/system/bin/ip6tables-save
+rm -rf ./system/system/bin/ip6tables-wrapper-1.0
+ln -f -s netutils-wrapper-1.0 ./system/system/bin/ip6tables-wrapper-1.0
+rm -rf ./system/system/bin/iptables-restore
+ln -f -s iptables ./system/system/bin/iptables-restore
+rm -rf ./system/system/bin/iptables-save
+ln -f -s iptables ./system/system/bin/iptables-save
+rm -rf ./system/system/bin/iptables-wrapper-1.0
+ln -f -s netutils-wrapper-1.0 ./system/system/bin/iptables-wrapper-1.0
+rm -rf ./system/system/bin/kill
+ln -f -s toybox ./system/system/bin/kill
+rm -rf ./system/system/bin/killall
+ln -f -s toybox ./system/system/bin/killall
+rm -rf ./system/system/bin/linker
+ln -f -s /apex/com.android.runtime/bin/linker ./system/system/bin/linker
+rm -rf ./system/system/bin/linker64
+ln -f -s /apex/com.android.runtime/bin/linker64 ./system/system/bin/linker64
+rm -rf ./system/system/bin/linker_asan
+ln -f -s /apex/com.android.runtime/bin/linker ./system/system/bin/linker_asan
+rm -rf ./system/system/bin/linker_asan64
+ln -f -s /apex/com.android.runtime/bin/linker64 ./system/system/bin/linker_asan64
+rm -rf ./system/system/bin/ln
+ln -f -s toybox ./system/system/bin/ln
+rm -rf ./system/system/bin/load_policy
+ln -f -s toybox ./system/system/bin/load_policy
+rm -rf ./system/system/bin/log
+ln -f -s toybox ./system/system/bin/log
+rm -rf ./system/system/bin/logname
+ln -f -s toybox ./system/system/bin/logname
+rm -rf ./system/system/bin/losetup
+ln -f -s toybox ./system/system/bin/losetup
+rm -rf ./system/system/bin/ls
+ln -f -s toybox ./system/system/bin/ls
+rm -rf ./system/system/bin/lsmod
+ln -f -s toybox ./system/system/bin/lsmod
+rm -rf ./system/system/bin/lsof
+ln -f -s toybox ./system/system/bin/lsof
+rm -rf ./system/system/bin/lspci
+ln -f -s toybox ./system/system/bin/lspci
+rm -rf ./system/system/bin/lsusb
+ln -f -s toybox ./system/system/bin/lsusb
+rm -rf ./system/system/bin/md5sum
+ln -f -s toybox ./system/system/bin/md5sum
+rm -rf ./system/system/bin/microcom
+ln -f -s toybox ./system/system/bin/microcom
+rm -rf ./system/system/bin/mkdir
+ln -f -s toybox ./system/system/bin/mkdir
+rm -rf ./system/system/bin/mkfifo
+ln -f -s toybox ./system/system/bin/mkfifo
+rm -rf ./system/system/bin/mkfs.ext2
+ln -f -s mke2fs ./system/system/bin/mkfs.ext2
+rm -rf ./system/system/bin/mkfs.ext3
+ln -f -s mke2fs ./system/system/bin/mkfs.ext3
+rm -rf ./system/system/bin/mkfs.ext4
+ln -f -s mke2fs ./system/system/bin/mkfs.ext4
+rm -rf ./system/system/bin/mknod
+ln -f -s toybox ./system/system/bin/mknod
+rm -rf ./system/system/bin/mkswap
+ln -f -s toybox ./system/system/bin/mkswap
+rm -rf ./system/system/bin/mktemp
+ln -f -s toybox ./system/system/bin/mktemp
+rm -rf ./system/system/bin/more
+ln -f -s toybox ./system/system/bin/more
+rm -rf ./system/system/bin/modinfo
+ln -f -s toybox ./system/system/bin/modinfo
+rm -rf ./system/system/bin/modprobe
+ln -f -s toybox ./system/system/bin/modprobe
+rm -rf ./system/system/bin/mount
+ln -f -s toybox ./system/system/bin/mount
+rm -rf ./system/system/bin/mountpoint
+ln -f -s toybox ./system/system/bin/mountpoint
+rm -rf ./system/system/bin/mv
+ln -f -s toybox ./system/system/bin/mv
+rm -rf ./system/system/bin/nc
+ln -f -s toybox ./system/system/bin/nc
+rm -rf ./system/system/bin/ndc-wrapper-1.0
+ln -f -s netutils-wrapper-1.0 ./system/system/bin/ndc-wrapper-1.0
+rm -rf ./system/system/bin/netcat
+ln -f -s toybox ./system/system/bin/netcat
+rm -rf ./system/system/bin/netstat
+ln -f -s toybox ./system/system/bin/netstat
+rm -rf ./system/system/bin/nice
+ln -f -s toybox ./system/system/bin/nice
+rm -rf ./system/system/bin/nl
+ln -f -s toybox ./system/system/bin/nl
+rm -rf ./system/system/bin/nohup
+ln -f -s toybox ./system/system/bin/nohup
+rm -rf ./system/system/bin/nproc
+ln -f -s toybox ./system/system/bin/nproc
+rm -rf ./system/system/bin/nsenter
+ln -f -s toybox ./system/system/bin/nsenter
+rm -rf ./system/system/bin/oatdump
+ln -f -s /apex/com.android.runtime/bin/oatdump ./system/system/bin/oatdump
+rm -rf ./system/system/bin/od
+ln -f -s toybox ./system/system/bin/od
+rm -rf ./system/system/bin/paste
+ln -f -s toybox ./system/system/bin/paste
+rm -rf ./system/system/bin/patch
+ln -f -s toybox ./system/system/bin/patch
+rm -rf ./system/system/bin/pgrep
+ln -f -s toybox ./system/system/bin/pgrep
+rm -rf ./system/system/bin/pidof
+ln -f -s toybox ./system/system/bin/pidof
+rm -rf ./system/system/bin/pkill
+ln -f -s toybox ./system/system/bin/pkill
+rm -rf ./system/system/bin/pmap
+ln -f -s toybox ./system/system/bin/pmap
+rm -rf ./system/system/bin/printenv
+ln -f -s toybox ./system/system/bin/printenv
+rm -rf ./system/system/bin/printf
+ln -f -s toybox ./system/system/bin/printf
+rm -rf ./system/system/bin/profman
+ln -f -s /apex/com.android.runtime/bin/profman ./system/system/bin/profman
+rm -rf ./system/system/bin/ps
+ln -f -s toybox ./system/system/bin/ps
+rm -rf ./system/system/bin/pwd
+ln -f -s toybox ./system/system/bin/pwd
+rm -rf ./system/system/bin/readlink
+ln -f -s toybox ./system/system/bin/readlink
+rm -rf ./system/system/bin/realpath
+ln -f -s toybox ./system/system/bin/realpath
+rm -rf ./system/system/bin/renice
+ln -f -s toybox ./system/system/bin/renice
+rm -rf ./system/system/bin/resize.f2fs
+ln -f -s fsck.f2fs ./system/system/bin/resize.f2fs
+rm -rf ./system/system/bin/restorecon
+ln -f -s toybox ./system/system/bin/restorecon
+rm -rf ./system/system/bin/rm
+ln -f -s toybox ./system/system/bin/rm
+rm -rf ./system/system/bin/rmdir
+ln -f -s toybox ./system/system/bin/rmdir
+rm -rf ./system/system/bin/rmmod
+ln -f -s toybox ./system/system/bin/rmmod
+rm -rf ./system/system/bin/runcon
+ln -f -s toybox ./system/system/bin/runcon
+rm -rf ./system/system/bin/sed
+ln -f -s toybox ./system/system/bin/sed
+rm -rf ./system/system/bin/sendevent
+ln -f -s toybox ./system/system/bin/sendevent
+rm -rf ./system/system/bin/seq
+ln -f -s toybox ./system/system/bin/seq
+rm -rf ./system/system/bin/setenforce
+ln -f -s toybox ./system/system/bin/setenforce
+rm -rf ./system/system/bin/setprop
+ln -f -s toybox ./system/system/bin/setprop
+rm -rf ./system/system/bin/setsid
+ln -f -s toybox ./system/system/bin/setsid
+rm -rf ./system/system/bin/sha1sum
+ln -f -s toybox ./system/system/bin/sha1sum
+rm -rf ./system/system/bin/sha224sum
+ln -f -s toybox ./system/system/bin/sha224sum
+rm -rf ./system/system/bin/sha256sum
+ln -f -s toybox ./system/system/bin/sha256sum
+rm -rf ./system/system/bin/sha384sum
+ln -f -s toybox ./system/system/bin/sha384sum
+rm -rf ./system/system/bin/sha512sum
+ln -f -s toybox ./system/system/bin/sha512sum
+rm -rf ./system/system/bin/sleep
+ln -f -s toybox ./system/system/bin/sleep
+rm -rf ./system/system/bin/sort
+ln -f -s toybox ./system/system/bin/sort
+rm -rf ./system/system/bin/split
+ln -f -s toybox ./system/system/bin/split
+rm -rf ./system/system/bin/start
+ln -f -s toybox ./system/system/bin/start
+rm -rf ./system/system/bin/stat
+ln -f -s toybox ./system/system/bin/stat
+rm -rf ./system/system/bin/stop
+ln -f -s toybox ./system/system/bin/stop
+rm -rf ./system/system/bin/strings
+ln -f -s toybox ./system/system/bin/strings
+rm -rf ./system/system/bin/stty
+ln -f -s toybox ./system/system/bin/stty
+rm -rf ./system/system/bin/swapoff
+ln -f -s toybox ./system/system/bin/swapoff
+rm -rf ./system/system/bin/swapon
+ln -f -s toybox ./system/system/bin/swapon
+rm -rf ./system/system/bin/sync
+ln -f -s toybox ./system/system/bin/sync
+rm -rf ./system/system/bin/sysctl
+ln -f -s toybox ./system/system/bin/sysctl
+rm -rf ./system/system/bin/tac
+ln -f -s toybox ./system/system/bin/tac
+rm -rf ./system/system/bin/tail
+ln -f -s toybox ./system/system/bin/tail
+rm -rf ./system/system/bin/tar
+ln -f -s toybox ./system/system/bin/tar
+rm -rf ./system/system/bin/taskset
+ln -f -s toybox ./system/system/bin/taskset
+rm -rf ./system/system/bin/tc-wrapper-1.0
+ln -f -s netutils-wrapper-1.0 ./system/system/bin/tc-wrapper-1.0
+rm -rf ./system/system/bin/tee
+ln -f -s toybox ./system/system/bin/tee
+rm -rf ./system/system/bin/time
+ln -f -s toybox ./system/system/bin/time
+rm -rf ./system/system/bin/timeout
+ln -f -s toybox ./system/system/bin/timeout
+rm -rf ./system/system/bin/top
+ln -f -s toybox ./system/system/bin/top
+rm -rf ./system/system/bin/touch
+ln -f -s toybox ./system/system/bin/touch
+rm -rf ./system/system/bin/tr
+ln -f -s toybox ./system/system/bin/tr
+rm -rf ./system/system/bin/true
+ln -f -s toybox ./system/system/bin/true
+rm -rf ./system/system/bin/truncate
+ln -f -s toybox ./system/system/bin/truncate
+rm -rf ./system/system/bin/tty
+ln -f -s toybox ./system/system/bin/tty
+rm -rf ./system/system/bin/ueventd
+ln -f -s init ./system/system/bin/ueventd
+rm -rf ./system/system/bin/ulimit
+ln -f -s toybox ./system/system/bin/ulimit
+rm -rf ./system/system/bin/umount
+ln -f -s toybox ./system/system/bin/umount
+rm -rf ./system/system/bin/uname
+ln -f -s toybox ./system/system/bin/uname
+rm -rf ./system/system/bin/uniq
+ln -f -s toybox ./system/system/bin/uniq
+rm -rf ./system/system/bin/unix2dos
+ln -f -s toybox ./system/system/bin/unix2dos
+rm -rf ./system/system/bin/unlink
+ln -f -s toybox ./system/system/bin/unlink
+rm -rf ./system/system/bin/unshare
+ln -f -s toybox ./system/system/bin/unshare
+rm -rf ./system/system/bin/uptime
+ln -f -s toybox ./system/system/bin/uptime
+rm -rf ./system/system/bin/usleep
+ln -f -s toybox ./system/system/bin/usleep
+rm -rf ./system/system/bin/uudecode
+ln -f -s toybox ./system/system/bin/uudecode
+rm -rf ./system/system/bin/uuencode
+ln -f -s toybox ./system/system/bin/uuencode
+rm -rf ./system/system/bin/uuidgen
+ln -f -s toybox ./system/system/bin/uuidgen
+rm -rf ./system/system/bin/vmstat
+ln -f -s toybox ./system/system/bin/vmstat
+rm -rf ./system/system/bin/watch
+ln -f -s toybox ./system/system/bin/watch
+rm -rf ./system/system/bin/wc
+ln -f -s toybox ./system/system/bin/wc
+rm -rf ./system/system/bin/which
+ln -f -s toybox ./system/system/bin/which
+rm -rf ./system/system/bin/whoami
+ln -f -s toybox ./system/system/bin/whoami
+rm -rf ./system/system/bin/xargs
+ln -f -s toybox ./system/system/bin/xargs
+rm -rf ./system/system/bin/xxd
+ln -f -s toybox ./system/system/bin/xxd
+rm -rf ./system/system/bin/yes
+ln -f -s toybox ./system/system/bin/yes
+rm -rf ./system/system/bin/zcat
+ln -f -s toybox ./system/system/bin/zcat
+rm -rf ./system/system/fonts/DroidSans-Bold.ttf
+ln -f -s Roboto-Bold.ttf ./system/system/fonts/DroidSans-Bold.ttf
+rm -rf ./system/system/fonts/DroidSans.ttf
+ln -f -s Roboto-Regular.ttf ./system/system/fonts/DroidSans.ttf
+rm -rf ./system/system/framework/arm/boot-QPerformance.vdex
+ln -f -s ../boot-QPerformance.vdex ./system/system/framework/arm/boot-QPerformance.vdex
+rm -rf ./system/system/framework/arm/boot-UxPerformance.vdex
+ln -f -s ../boot-UxPerformance.vdex ./system/system/framework/arm/boot-UxPerformance.vdex
+rm -rf ./system/system/framework/arm/boot-WfdCommon.vdex
+ln -f -s ../boot-WfdCommon.vdex ./system/system/framework/arm/boot-WfdCommon.vdex
+rm -rf ./system/system/framework/arm/boot-android.test.base.vdex
+ln -f -s ../boot-android.test.base.vdex ./system/system/framework/arm/boot-android.test.base.vdex
+rm -rf ./system/system/framework/arm/boot-apache-xml.vdex
+ln -f -s ../boot-apache-xml.vdex ./system/system/framework/arm/boot-apache-xml.vdex
+rm -rf ./system/system/framework/arm/boot-bouncycastle.vdex
+ln -f -s ../boot-bouncycastle.vdex ./system/system/framework/arm/boot-bouncycastle.vdex
+rm -rf ./system/system/framework/arm/boot-com.nxp.nfc.nq.vdex
+ln -f -s ../boot-com.nxp.nfc.nq.vdex ./system/system/framework/arm/boot-com.nxp.nfc.nq.vdex
+rm -rf ./system/system/framework/arm/boot-core-libart.vdex
+ln -f -s ../boot-core-libart.vdex ./system/system/framework/arm/boot-core-libart.vdex
+rm -rf ./system/system/framework/arm/boot-ext.vdex
+ln -f -s ../boot-ext.vdex ./system/system/framework/arm/boot-ext.vdex
+rm -rf ./system/system/framework/arm/boot-framework.vdex
+ln -f -s ../boot-framework.vdex ./system/system/framework/arm/boot-framework.vdex
+rm -rf ./system/system/framework/arm/boot-hydra.vdex
+ln -f -s ../boot-hydra.vdex ./system/system/framework/arm/boot-hydra.vdex
+rm -rf ./system/system/framework/arm/boot-ims-common.vdex
+ln -f -s ../boot-ims-common.vdex ./system/system/framework/arm/boot-ims-common.vdex
+rm -rf ./system/system/framework/arm/boot-miuisdk@boot.vdex
+ln -f -s ../boot-miuisdk@boot.vdex ./system/system/framework/arm/boot-miuisdk@boot.vdex
+rm -rf ./system/system/framework/arm/boot-miuisystemsdk@boot.vdex
+ln -f -s ../boot-miuisystemsdk@boot.vdex ./system/system/framework/arm/boot-miuisystemsdk@boot.vdex
+rm -rf ./system/system/framework/arm/boot-okhttp.vdex
+ln -f -s ../boot-okhttp.vdex ./system/system/framework/arm/boot-okhttp.vdex
+rm -rf ./system/system/framework/arm/boot-tcmiface.vdex
+ln -f -s ../boot-tcmiface.vdex ./system/system/framework/arm/boot-tcmiface.vdex
+rm -rf ./system/system/framework/arm/boot-telephony-common.vdex
+ln -f -s ../boot-telephony-common.vdex ./system/system/framework/arm/boot-telephony-common.vdex
+rm -rf ./system/system/framework/arm/boot-telephony-ext.vdex
+ln -f -s ../boot-telephony-ext.vdex ./system/system/framework/arm/boot-telephony-ext.vdex
+rm -rf ./system/system/framework/arm/boot-voip-common.vdex
+ln -f -s ../boot-voip-common.vdex ./system/system/framework/arm/boot-voip-common.vdex
+rm -rf ./system/system/framework/arm/boot.vdex
+ln -f -s ../boot.vdex ./system/system/framework/arm/boot.vdex
+rm -rf ./system/system/framework/arm64/boot-QPerformance.vdex
+ln -f -s ../boot-QPerformance.vdex ./system/system/framework/arm64/boot-QPerformance.vdex
+rm -rf ./system/system/framework/arm64/boot-UxPerformance.vdex
+ln -f -s ../boot-UxPerformance.vdex ./system/system/framework/arm64/boot-UxPerformance.vdex
+rm -rf ./system/system/framework/arm64/boot-WfdCommon.vdex
+ln -f -s ../boot-WfdCommon.vdex ./system/system/framework/arm64/boot-WfdCommon.vdex
+rm -rf ./system/system/framework/arm64/boot-android.test.base.vdex
+ln -f -s ../boot-android.test.base.vdex ./system/system/framework/arm64/boot-android.test.base.vdex
+rm -rf ./system/system/framework/arm64/boot-apache-xml.vdex
+ln -f -s ../boot-apache-xml.vdex ./system/system/framework/arm64/boot-apache-xml.vdex
+rm -rf ./system/system/framework/arm64/boot-bouncycastle.vdex
+ln -f -s ../boot-bouncycastle.vdex ./system/system/framework/arm64/boot-bouncycastle.vdex
+rm -rf ./system/system/framework/arm64/boot-com.nxp.nfc.nq.vdex
+ln -f -s ../boot-com.nxp.nfc.nq.vdex ./system/system/framework/arm64/boot-com.nxp.nfc.nq.vdex
+rm -rf ./system/system/framework/arm64/boot-core-libart.vdex
+ln -f -s ../boot-core-libart.vdex ./system/system/framework/arm64/boot-core-libart.vdex
+rm -rf ./system/system/framework/arm64/boot-ext.vdex
+ln -f -s ../boot-ext.vdex ./system/system/framework/arm64/boot-ext.vdex
+rm -rf ./system/system/framework/arm64/boot-framework.vdex
+ln -f -s ../boot-framework.vdex ./system/system/framework/arm64/boot-framework.vdex
+rm -rf ./system/system/framework/arm64/boot-hydra.vdex
+ln -f -s ../boot-hydra.vdex ./system/system/framework/arm64/boot-hydra.vdex
+rm -rf ./system/system/framework/arm64/boot-ims-common.vdex
+ln -f -s ../boot-ims-common.vdex ./system/system/framework/arm64/boot-ims-common.vdex
+rm -rf ./system/system/framework/arm64/boot-miuisdk@boot.vdex
+ln -f -s ../boot-miuisdk@boot.vdex ./system/system/framework/arm64/boot-miuisdk@boot.vdex
+rm -rf ./system/system/framework/arm64/boot-miuisystemsdk@boot.vdex
+ln -f -s ../boot-miuisystemsdk@boot.vdex ./system/system/framework/arm64/boot-miuisystemsdk@boot.vdex
+rm -rf ./system/system/framework/arm64/boot-okhttp.vdex
+ln -f -s ../boot-okhttp.vdex ./system/system/framework/arm64/boot-okhttp.vdex
+rm -rf ./system/system/framework/arm64/boot-tcmiface.vdex
+ln -f -s ../boot-tcmiface.vdex ./system/system/framework/arm64/boot-tcmiface.vdex
+rm -rf ./system/system/framework/arm64/boot-telephony-common.vdex
+ln -f -s ../boot-telephony-common.vdex ./system/system/framework/arm64/boot-telephony-common.vdex
+rm -rf ./system/system/framework/arm64/boot-telephony-ext.vdex
+ln -f -s ../boot-telephony-ext.vdex ./system/system/framework/arm64/boot-telephony-ext.vdex
+rm -rf ./system/system/framework/arm64/boot-voip-common.vdex
+ln -f -s ../boot-voip-common.vdex ./system/system/framework/arm64/boot-voip-common.vdex
+rm -rf ./system/system/framework/arm64/boot.vdex
+ln -f -s ../boot.vdex ./system/system/framework/arm64/boot.vdex
+rm -rf ./system/system/lib/libc.so
+ln -f -s /apex/com.android.runtime/lib/bionic/libc.so ./system/system/lib/libc.so
+rm -rf ./system/system/lib/libdl.so
+ln -f -s /apex/com.android.runtime/lib/bionic/libdl.so ./system/system/lib/libdl.so
+rm -rf ./system/system/lib/libm.so
+ln -f -s /apex/com.android.runtime/lib/bionic/libm.so ./system/system/lib/libm.so
+rm -rf ./system/system/lib64/libc.so
+ln -f -s /apex/com.android.runtime/lib64/bionic/libc.so ./system/system/lib64/libc.so
+rm -rf ./system/system/lib64/libdl.so
+ln -f -s /apex/com.android.runtime/lib64/bionic/libdl.so ./system/system/lib64/libdl.so
+rm -rf ./system/system/lib64/libm.so
+ln -f -s /apex/com.android.runtime/lib64/bionic/libm.so ./system/system/lib64/libm.so
+rm -rf ./system/system/media/audio/notifications/IncomingMessage.ogg
+ln -f -s ../ui/IncomingMessage.ogg ./system/system/media/audio/notifications/IncomingMessage.ogg
+rm -rf ./system/system/media/audio/notifications/MessageSent.ogg
+ln -f -s ../ui/MessageSent.ogg ./system/system/media/audio/notifications/MessageSent.ogg
+rm -rf ./system/system/priv-app/InProcessNetworkStack/lib/arm64/libnativehelper_compat_libc++.so
+ln -f -s /system/lib64/libnativehelper_compat_libc++.so ./system/system/priv-app/InProcessNetworkStack/lib/arm64/libnativehelper_compat_libc++.so
+rm -rf ./system/system/priv-app/InProcessNetworkStack/lib/arm64/libnetworkstackutilsjni.so
+ln -f -s /system/lib64/libnetworkstackutilsjni.so ./system/system/priv-app/InProcessNetworkStack/lib/arm64/libnetworkstackutilsjni.so
+rm -rf ./system/system/priv-app/MiRcs/lib/arm64/libmtccommon.so
+ln -f -s /system/lib64/libmtccommon.so ./system/system/priv-app/MiRcs/lib/arm64/libmtccommon.so
+rm -rf ./system/system/priv-app/MiRcs/lib/arm64/libmtccp.so
+ln -f -s /system/lib64/libmtccp.so ./system/system/priv-app/MiRcs/lib/arm64/libmtccp.so
+rm -rf ./system/system/priv-app/MiRcs/lib/arm64/libmtccprof.so
+ln -f -s /system/lib64/libmtccprof.so ./system/system/priv-app/MiRcs/lib/arm64/libmtccprof.so
+rm -rf ./system/system/priv-app/MiRcs/lib/arm64/libmtcmsg.so
+ln -f -s /system/lib64/libmtcmsg.so ./system/system/priv-app/MiRcs/lib/arm64/libmtcmsg.so
+rm -rf ./system/system/priv-app/MiRcs/lib/arm64/libmtcxdmcommon.so
+ln -f -s /system/lib64/libmtcxdmcommon.so ./system/system/priv-app/MiRcs/lib/arm64/libmtcxdmcommon.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.algojni.so
+ln -f -s /system/lib64/libcom.xiaomi.camera.algojni.so ./system/system/priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.algojni.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.mianodejni.so
+ln -f -s /system/lib64/libcom.xiaomi.camera.mianodejni.so ./system/system/priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.mianodejni.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.requestutil.so
+ln -f -s /system/lib64/libcom.xiaomi.camera.requestutil.so ./system/system/priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.requestutil.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libfenshen.so
+ln -f -s /system/lib64/libfenshen.so ./system/system/priv-app/MiuiCamera/lib/arm64/libfenshen.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libffmpeg.so
+ln -f -s /system/lib64/libffmpeg.so ./system/system/priv-app/MiuiCamera/lib/arm64/libffmpeg.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libjni_jpegutil_xiaomi.so
+ln -f -s /system/lib64/libjni_jpegutil_xiaomi.so ./system/system/priv-app/MiuiCamera/lib/arm64/libjni_jpegutil_xiaomi.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libmimoji_avatarengine.so
+ln -f -s /system/lib64/libmimoji_avatarengine.so ./system/system/priv-app/MiuiCamera/lib/arm64/libmimoji_avatarengine.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libmimoji_jni.so
+ln -f -s /system/lib64/libmimoji_jni.so ./system/system/priv-app/MiuiCamera/lib/arm64/libmimoji_jni.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libmulti-wakeup-engine.so
+ln -f -s /system/lib64/libmulti-wakeup-engine.so ./system/system/priv-app/MiuiCamera/lib/arm64/libmulti-wakeup-engine.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/librecord_video.so
+ln -f -s /system/lib64/librecord_video.so ./system/system/priv-app/MiuiCamera/lib/arm64/librecord_video.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libsubtitle_jni.so
+ln -f -s /system/lib64/libsubtitle_jni.so ./system/system/priv-app/MiuiCamera/lib/arm64/libsubtitle_jni.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libvvc++_shared.so
+ln -f -s /system/lib64/libvvc++_shared.so ./system/system/priv-app/MiuiCamera/lib/arm64/libvvc++_shared.so
+rm -rf ./system/system/priv-app/MiuiCamera/lib/arm64/libvvmediaeditor.so
+ln -f -s /system/lib64/libvvmediaeditor.so ./system/system/priv-app/MiuiCamera/lib/arm64/libvvmediaeditor.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo.so
+ln -f -s /system/lib64/libdoc_photo.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo_c++_shared.so
+ln -f -s /system/lib64/libdoc_photo_c++_shared.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo_c++_shared.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_dualcam_refocus.so
+ln -f -s /system/lib64/libgallery_arcsoft_dualcam_refocus.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_dualcam_refocus.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting.so
+ln -f -s /system/lib64/libgallery_arcsoft_portrait_lighting.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting_c.so
+ln -f -s /system/lib64/libgallery_arcsoft_portrait_lighting_c.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting_c.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_mpbase.so
+ln -f -s /system/lib64/libgallery_mpbase.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_mpbase.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmibokeh_gallery.so
+ln -f -s /system/lib64/libmibokeh_gallery.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmibokeh_gallery.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmisr.so
+ln -f -s /system/lib64/libmisr.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmisr.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo.so
+ln -f -s /system/lib64/libmotion_photo.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo_c++_shared.so
+ln -f -s /system/lib64/libmotion_photo_c++_shared.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo_c++_shared.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo_mace.so
+ln -f -s /system/lib64/libmotion_photo_mace.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo_mace.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus.so
+ln -f -s /system/lib64/librefocus.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus_mibokeh.so
+ln -f -s /system/lib64/librefocus_mibokeh.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/librefocus_mibokeh.so
+rm -rf ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libselection.so
+ln -f -s /system/lib64/libselection.so ./system/system/priv-app/MiuiExtraPhoto/lib/arm64/libselection.so
+rm -rf ./system/system/priv-app/WfdService/lib/arm64/libwfdnative.so
+ln -f -s /system/lib64/libwfdnative.so ./system/system/priv-app/WfdService/lib/arm64/libwfdnative.so
+rm -rf ./system/system/product
+ln -f -s /product ./system/system/product
+rm -rf ./system/system/usr/icu
+ln -f -s /apex/com.android.runtime/etc/icu ./system/system/usr/icu
+rm -rf ./system/system/vendor
+ln -f -s /vendor ./system/system/vendor

@@ -176,8 +176,10 @@ if [[ $E2FSPROGS_FAKE_TIME ]]; then
 fi
 HOST="$(uname)"
 mke2fs="/system/bin/mke2fs"
-e2fsdroid="chroot /data/data/com.nightmare/files/home/NightGSIs/ /e2fsdroid"
-
+export LD_LIBRARY_PATH=/data/data/com.nightmare/files/home/NightGSIs/lib/
+e2fsdroid="/data/data/com.nightmare/files/home/NightGSIs/lib/ld-linux-aarch64.so.1 /data/data/com.nightmare/files/home/NightGSIs/e2fsdroid"
+#e2fsdroid="/system/bin/linker64 $LOCALDIR/bin/e2fsdroid"
+#e2fsdroid="/data/data/com.nightmare/files/home/NightGSIs/lib/ld-linux-aarch64.so.1 /data/data/com.nightmare/files/home/NightGSIs/e2fsdroid"
 MAKE_EXT4FS_CMD="$mke2fs $MKE2FS_OPTS -t $EXT_VARIANT -b $BLOCKSIZE $OUTPUT_FILE $SIZE"
 echo $MAKE_EXT4FS_ENV $MAKE_EXT4FS_CMD
 env $MAKE_EXT4FS_ENV $MAKE_EXT4FS_CMD

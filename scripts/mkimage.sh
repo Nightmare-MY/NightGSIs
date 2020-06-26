@@ -80,6 +80,7 @@ if [[ -f "$tempdir/file_contexts" ]]; then
     echo "/avb                    u:object_r:rootfs:s0" >> "$tempdir/file_contexts"
     fcontexts="$tempdir/file_contexts"
 fi
+fs_config="$tempdir/fs_config"
  rm -rf "$systemdir/persist"
  rm -rf "$systemdir/bt_firmware"
  rm -rf "$systemdir/firmware"
@@ -101,8 +102,8 @@ if [ "$5" == "--old" ]; then
     fi
 else
     if [ "$outputtype" == "Aonly" ]; then
-         $toolsdir/mkuserimg_mke2fs.sh  "$systemdir/system" "$output" ext4 system $syssize -T 0 -C /tmp/fs_config -L system /tmp/file_contexts
+         $toolsdir/mkuserimg_mke2fs.sh  "$systemdir/system" "$output" ext4 system $syssize -T 0 -C $fs_config -L system $fcontexts
     else
-         $toolsdir/mkuserimg_mke2fs.sh  "$systemdir/" "$output" ext4 / $syssize -T 0 -C /tmp/fs_config -L / /tmp/file_contexts
+         $toolsdir/mkuserimg_mke2fs.sh  "$systemdir/" "$output" ext4 / $syssize -T 0 -C $fs_config -L / $fcontexts
     fi
 fi
